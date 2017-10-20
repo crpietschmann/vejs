@@ -12,7 +12,7 @@ Now available as a Nuget Package: [Bing Maps v6.3](http://nuget.org/List/Package
 
 ## v7.0 examples
 
-![](images/v7intellisense.png)
+![](images/v7Intellisense.png)
 
 ## v6.3 examples
 
