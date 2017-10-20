@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DF1FDFF9-99E2-403D-A1E6-515316162441}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BingMapsJsHelper</RootNamespace>
+    <AssemblyName>BingMapsJsHelper</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BMJS\BingMapsReference-old.js" />
+    <Content Include="BMJS\Microsoft.Maps-vsdoc.js" />
+    <Content Include="BMJS\References\1.BaseObject.js" />
+    <Content Include="BMJS\References\Color.js" />
+    <Content Include="BMJS\References\Coordinates.js" />
+    <Content Include="BMJS\References\Directions\BusinessDetails.js" />
+    <Content Include="BMJS\References\Directions\BusinessDisambiguationSuggestion.js" />
+    <Content Include="BMJS\References\Directions\Directions.js" />
+    <Content Include="BMJS\References\Directions\DirectionsErrorEventArgs.js" />
+    <Content Include="BMJS\References\Directions\DirectionsEventArgs.js" />
+    <Content Include="BMJS\References\Directions\DirectionsManager.js" />
+    <Content Include="BMJS\References\Directions\DirectionsRenderOptions.js" />
+    <Content Include="BMJS\References\Directions\DirectionsRequestOptions.js" />
+    <Content Include="BMJS\References\Directions\DirectionsStep.js" />
+    <Content Include="BMJS\References\Directions\DirectionsStepEventArgs.js" />
+    <Content Include="BMJS\References\Directions\DirectionsStepRenderEventArgs.js" />
+    <Content Include="BMJS\References\Directions\DirectionsStepWarning.js" />
+    <Content Include="BMJS\References\Directions\Disambiguation.js" />
+    <Content Include="BMJS\References\Directions\DisambiguationRenderEventArgs.js" />
+    <Content Include="BMJS\References\Directions\LocationDisambiguationSuggestion.js" />
+    <Content Include="BMJS\References\Directions\ResetDirectionsOptions.js" />
+    <Content Include="BMJS\References\Directions\Route.js" />
+    <Content Include="BMJS\References\Directions\RouteLeg.js" />
+    <Content Include="BMJS\References\Directions\RoutePath.js" />
+    <Content Include="BMJS\References\Directions\RouteSelectorEventArgs.js" />
+    <Content Include="BMJS\References\Directions\RouteSelectorRenderEventArgs.js" />
+    <Content Include="BMJS\References\Directions\RouteSubLeg.js" />
+    <Content Include="BMJS\References\Directions\RouteSummary.js" />
+    <Content Include="BMJS\References\Directions\RouteSummaryRenderEventArgs.js" />
+    <Content Include="BMJS\References\Directions\TransitLine.js" />
+    <Content Include="BMJS\References\Directions\TransitOptions.js" />
+    <Content Include="BMJS\References\Directions\Waypoint.js" />
+    <Content Include="BMJS\References\Directions\WaypointEventArgs.js" />
+    <Content Include="BMJS\References\Directions\WaypointOptions.js" />
+    <Content Include="BMJS\References\Directions\WaypointRenderEventArgs.js" />
+    <Content Include="BMJS\References\EntityCollection.js" />
+    <Content Include="BMJS\References\EntityCollectionOptions.js" />
+    <Content Include="BMJS\References\Events.js" />
+    <Content Include="BMJS\References\GeoLocationProvider.js" />
+    <Content Include="BMJS\References\Infobox.js" />
+    <Content Include="BMJS\References\InfoboxOptions.js" />
+    <Content Include="BMJS\References\KeyEventArgs.js" />
+    <Content Include="BMJS\References\Location.js" />
+    <Content Include="BMJS\References\LocationRect.js" />
+    <Content Include="BMJS\References\Map.js" />
+    <Content Include="BMJS\References\MapMode.js" />
+    <Content Include="BMJS\References\MapModeOptions.js" />
+    <Content Include="BMJS\References\MapOptions.js" />
+    <Content Include="BMJS\References\MouseEventArgs.js" />
+    <Content Include="BMJS\References\Point.js" />
+    <Content Include="BMJS\References\Polygon.js" />
+    <Content Include="BMJS\References\PolygonOptions.js" />
+    <Content Include="BMJS\References\Polyline.js" />
+    <Content Include="BMJS\References\PolylineOptions.js" />
+    <Content Include="BMJS\References\Position.js" />
+    <Content Include="BMJS\References\PositionCircleOptions.js" />
+    <Content Include="BMJS\References\PositionOptions.js" />
+    <Content Include="BMJS\References\Pushpin.js" />
+    <Content Include="BMJS\References\PushpinOptions.js" />
+    <Content Include="BMJS\References\Search\Address.js" />
+    <Content Include="BMJS\References\Search\GeocodeLocation.js" />
+    <Content Include="BMJS\References\Search\GeocodeRequestOptions.js" />
+    <Content Include="BMJS\References\Search\GeocodeResult.js" />
+    <Content Include="BMJS\References\Search\PlaceResult.js" />
+    <Content Include="BMJS\References\Search\ReverseGeocodeRequestOptions.js" />
+    <Content Include="BMJS\References\Search\Search.js" />
+    <Content Include="BMJS\References\Search\SearchManager.js" />
+    <Content Include="BMJS\References\Search\SearchParseResult.js" />
+    <Content Include="BMJS\References\Search\SearchRegion.js" />
+    <Content Include="BMJS\References\Search\SearchRequestOptions.js" />
+    <Content Include="BMJS\References\Search\SearchResponse.js" />
+    <Content Include="BMJS\References\Search\SearchResponseSummary.js" />
+    <Content Include="BMJS\References\Search\SearchResult.js" />
+    <Content Include="BMJS\References\TileLayer.js" />
+    <Content Include="BMJS\References\TileLayerOptions.js" />
+    <Content Include="BMJS\References\TileSource.js" />
+    <Content Include="BMJS\References\TileSourceOptions.js" />
+    <Content Include="BMJS\References\TrafficLayer.js" />
+    <Content Include="BMJS\References\TrafficManager.js" />
+    <Content Include="BMJS\References\VenueMaps\Directory.js" />
+    <Content Include="BMJS\References\VenueMaps\Floor.js" />
+    <Content Include="BMJS\References\VenueMaps\Footprint.js" />
+    <Content Include="BMJS\References\VenueMaps\Metadata.js" />
+    <Content Include="BMJS\References\VenueMaps\NearbyVenue.js" />
+    <Content Include="BMJS\References\VenueMaps\NearbyVenueOptions.js" />
+    <Content Include="BMJS\References\VenueMaps\Polygon.js" />
+    <Content Include="BMJS\References\VenueMaps\Primitive.js" />
+    <Content Include="BMJS\References\VenueMaps\VenueMap.js" />
+    <Content Include="BMJS\References\VenueMaps\VenueMapCreationOptions.js" />
+    <Content Include="BMJS\References\VenueMaps\VenueMapFactory.js" />
+    <Content Include="BMJS\References\VenueMaps\VenueMaps.js" />
+    <Content Include="BMJS\References\ViewOptions.js" />
+    <Content Include="Default.aspx" />
+    <Content Include="Default.aspx.js" />
+    <Content Include="nuget\NuGet.exe" />
+    <Content Include="nuget\Package\Content\Scripts\BMJS\Microsoft.Maps-vsdoc.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Documentation\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BMJS\Combine.bat" />
+    <None Include="nuget\pack.bat" />
+    <None Include="nuget\Package\bmjs.nuspec" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2134</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
